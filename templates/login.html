@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Image Caption Generation using Deep Learning</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="{{ url_for('first')}}">Home</a></li>
+                                    
+                                    <li class="active"><a href="{{ url_for('login')}}">Login</a></li>
+                                </ul>
+
+                                <!-- Search Icon -->
+                               
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(../static/img/bg-img/images8.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">Login</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                
+                                <li class="breadcrumb-item active" aria-current="page">Image Caption</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- About Us Area Start -->
+    
+    <!-- About Us Area End -->
+
+    <!-- Why Choose Us Area Start -->
+    <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Login</h2>
+                    </div>
+                </div>
+            </div>
+
+            
+            <head>
+
+     
+      
+ 
+             <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+    
+            function login(){
+            var uname = document.getElementById("uname").value;
+            var pwd = document.getElementById("pwd").value;
+    
+        if(uname == "admin" && pwd == "admin")
+        {
+          alert("Login Success!");
+          
+          window.location = "{{url_for('index')}}";
+          return false;
+        }
+        else
+        {
+        alert("Invalid Credentials!")
+        }
+            }
+            
+              
+    
+    
+     
+        </script>
+        
+    </head>
+     
+     <body id="page-top">
+    
+       
+          
+    
+      <!-- Portfolio Section -->
+         <section class="page-section portfolio" id="portfolio">
+
+
+             <!-- Portfolio Section Heading -->
+             <!-- Icon Divider -->
+             <!-- Portfolio Grid Items -->
+             <div class="row">
+
+                 <div class="col-md-6 col-lg-4" style="margin-left:400px">
+                     <div class="control-group">
+                         <!-- Username -->
+                         <br>
+                         <br>
+
+                         <label class="control-label" for="username"><b>Username</b></label>
+                         <div class="controls">
+                             <input type="text" id="uname" name="uname" placeholder="" class="form-control">
+
+                         </div>
+                     </div>
+                     <br>
+                     <br>
+
+                     <div class="control-group">
+                         <!-- Password-->
+
+                         <label class="control-label" for="password"><b>Password</b></label>
+                         <div class="controls">
+                             <input type="password" id="pwd" name="pwd" placeholder="" class="form-control">
+
+                         </div>
+                     </div>
+
+                     <div class="control-group">
+                         <!-- Button -->
+
+                         <div class="controls">
+                             <br>
+                             <br>
+                             <br>
+                             <input type="button" class="badges-btn btn-secondary" value="Login" style="margin-left: 150px" onclick="login()">
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+      </div>
+     
+     
+      </section>
+    
+    
+      
+    
+        </body>	 
+      
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                       
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="../static/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="../static/js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="../static/js/default-assets/active.js"></script>
+
+</body>
+
+</html>

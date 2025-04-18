@@ -1,0 +1,11 @@
+Image Caption Generating Deep Learning Model.
+
+Algorithm / Model Used: ResNet50 Architecture + LSTM
+
+Overall Loss: 2.57 (accuracy is 67 to 70).
+
+Dataset: Flickr 8k Dataset.
+
+
+
+
